@@ -7,7 +7,7 @@ services:
     networks:
       - frontend
     deploy:
-      replicas: 2
+      replicas: 5
       update_config:
         parallelism: 2
         delay: 10s
@@ -33,7 +33,7 @@ services:
     depends_on: 
       - redis
     deploy:
-      replicas: 2
+      replicas: 5
       update_config:
         parallelism: 2
       restart_policy:
